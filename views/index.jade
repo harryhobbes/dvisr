@@ -1,23 +1,151 @@
 extends layout
 
 block body
-  div(ng-controller='AppCtrl')
-    h2 Hello {{name}}
-    ul.menu
-      li
-        a(href='view1') view1
-      li
-        a(href='view2') view2
+  div.navbar-wrapper
+    div.container
+      div.navbar.navbar-inverse.navbar-static-top
+        div.container
+          div.navbar-header
+            button(type='button', data-toggle='collapse', data-target='.navbar-collapse').navbar-toggle
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            
+            a(href='#').navbar-brand Project name
+            
+          div.navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
+              li.dropdown
+                a(href='#', data-toggle='dropdown').dropdown-toggle Dropdown
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li.dropdown-header Nav header
+                  li
+                    a(href='#') Separated link
+                  li
+                    a(href='#') One more separated link
+                    
+  div#myCarousel.carousel.slide
+    ol.carousel-indicators
+      li(data-target='#myCarousel', data-slide-to='0').active
+      li(data-target='#myCarousel', data-slide-to='1')
+      li(data-target='#myCarousel', data-slide-to='2')     
+    div.carousel-inner
+      div.item.active
+        img(src='#', alt='First slide')
+        div.container
+          div.carousel-caption
+            h1 Example headline.
+            p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            p 
+              a(href='#').btn.btn-large.btn-primary Sign up today
+     
+      div.item
+        img(src='', alt='Second slide')
+        div.container
+          div.carousel-caption
+            h1 Another example headline.
+            p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            p
+              a(href='#').btn.btn-large.btn-primary Learn more
+      
+      div.item
+        img(src='', alt='Third slide')
+        div.container
+          div.carousel-caption
+            h1 One more for good measure.
+            p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            p
+              a(href='#').btn.btn-large.btn-primary Browse gallery
+    
+    a(href='#myCarousel', data-slide='prev').left.carousel-control
+      span.glyphicon.glyphicon-chevron-left
+      
+    a(href='#myCarousel', data-slide='next').right.carousel-control
+      span.glyphicon.glyphicon-chevron-right
+      
+  div.container.marketing
 
-    div(ng-view)
+    div.row
+      div.col-lg-4
+        img.img-circle(src='', alt='Generic placeholder image')
+        h2 Heading
+        p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+        p 
+          a.btn.btn-default(href='#') View details &raquo;
+      div.col-lg-4
+        img.img-circle(src='', alt='Generic placeholder image')
+        h2 Heading
+        p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+        p 
+          a.btn.btn-default(href='#') View details &raquo;
+      div.col-lg-4 
+        img.img-circle(src='', alt='Generic placeholder image')
+        h2 Heading
+        p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+        p 
+          a.btn.btn-default(href='#') View details &raquo;
+     
+    hr.featurette-divider
 
-    div
-      | Angular seed app: v
-      span(app-version)
+    div.row.featurette
+      div.col-md-7
+        h2.featurette-heading First featurette heading. 
+          span.text-muted It'll blow your mind.
+        p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+      
+      div.col-md-5
+        img.featurette-image.img-responsive(src='', alt='Generic placeholder image')
+    
+    hr.featurette-divider
 
-  script(src='js/lib/angular/angular.js')
-  script(src='js/app.js')
-  script(src='js/services.js')
-  script(src='js/controllers.js')
-  script(src='js/filters.js')
-  script(src='js/directives.js')
+    div.row.featurette
+      div.col-md-5
+        img.featurette-image.img-responsive(src='', alt='Generic placeholder image')
+    
+      div.col-md-7
+        h2.featurette-heading First featurette heading. 
+          span.text-muted It'll blow your mind.
+        p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+      
+    hr.featurette-divider
+
+    div.row.featurette
+      div.col-md-7
+        h2.featurette-heading First featurette heading. 
+          span.text-muted It'll blow your mind.
+        p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+      
+      div.col-md-5
+        img.featurette-image.img-responsive(src='', alt='Generic placeholder image')
+    
+    hr.featurette-divider
+ 
+    footer 
+      p.pull-right 
+        a(href='#') Back to top
+      p &copy; 2013 Company, Inc. &middot; 
+        a(href='#') Privacy &middot; 
+        a(href='#') Terms
+    
+  script(src='js/lib/jquery/jquery.js')
+  script(src='js/lib/bootstrap-javascript/bootstrap.js')
+  //-script(src='js/lib/angular/angular.js')
+  //-script(src='js/app.js')
+  //-script(src='js/services.js')
+  //-script(src='js/controllers.js')
+  //-script(src='js/filters.js')
+  //-script(src='js/directives.js')
