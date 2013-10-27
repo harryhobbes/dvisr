@@ -28,3 +28,8 @@
   content: "";
   padding: 0;
 }
+
+/* hack for bootstrap fixed header webkit bug */
+.affix,.navbar-fixed-top{
+  -webkit-transform: scale3d(1,1,1);
+}
