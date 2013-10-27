@@ -1,6 +1,13 @@
 /* app css stylesheet */
+.carousel-inner > .item > img.xero{
+  height: 1200px;
+}
 
 /* hack for bootstrap fixed header webkit bug */
 .affix,.navbar-fixed-top{
   -webkit-transform: scale3d(1,1,1);
+}
+
+.carousel-indicators {
+  z-index: 14;
 }
