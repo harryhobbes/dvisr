@@ -3,7 +3,7 @@ extends layout
 block body
   div.navbar-wrapper
     div.container
-      div.navbar.navbar-inverse.navbar-static-top
+      div.navbar.navbar-inverse.navbar-fixed-top
         div.container
           div.navbar-header
             button(type='button', data-toggle='collapse', data-target='.navbar-collapse').navbar-toggle
@@ -11,101 +11,101 @@ block body
               span.icon-bar
               span.icon-bar
             
-            a(href='#').navbar-brand Project name
+            a(href='#').navbar-brand Dvisr - A Xero Add-on
             
           div.navbar-collapse.collapse
             ul.nav.navbar-nav
               li.active
                 a(href='#') Home
               li
-                a(href='#about') About
+                a(href='#bi-explained') BI Explained
               li
-                a(href='#contact') Contact
-              li.dropdown
-                a(href='#', data-toggle='dropdown').dropdown-toggle Dropdown
-                  b.caret
-                ul.dropdown-menu
-                  li
-                    a(href='#') Action
-                  li
-                    a(href='#') Another action
-                  li
-                    a(href='#') Something else here
-                  li.divider
-                  li.dropdown-header Nav header
-                  li
-                    a(href='#') Separated link
-                  li
-                    a(href='#') One more separated link
+                a(href='#xero') Xero
+              //- li
+                //- a(href='#contact') Contact
                     
   div#myCarousel.carousel.slide
     ol.carousel-indicators
       li(data-target='#myCarousel', data-slide-to='0').active
-      li(data-target='#myCarousel', data-slide-to='1')
-      li(data-target='#myCarousel', data-slide-to='2')     
+      li(data-target='#myCarousel', data-slide-to='1')   
     div.carousel-inner
       div.item.active
-        img(src='#', alt='First slide')
+        //- img(src='#', alt='First slide')
         div.container
           div.carousel-caption
-            h1 Example headline.
-            p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            h1 Add-ons
+            p Software as a Service (SaaS) or cloud computing is the future. Welcome to the future!
             p 
-              a(href='#').btn.btn-large.btn-primary Sign up today
+              a(href='#bi-explained').btn.btn-large.btn-primary Learn more
      
       div.item
-        img(src='', alt='Second slide')
+        //- img(src='', alt='Second slide')
         div.container
           div.carousel-caption
-            h1 Another example headline.
-            p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            h1 Xero
+            p Becoming a Xero partner was a no brainer. Now you can get accounting and business intelligence in once place, online.
             p
-              a(href='#').btn.btn-large.btn-primary Learn more
+              a(href='#xero').btn.btn-large.btn-primary Learn more
       
-      div.item
-        img(src='', alt='Third slide')
-        div.container
-          div.carousel-caption
-            h1 One more for good measure.
-            p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            p
-              a(href='#').btn.btn-large.btn-primary Browse gallery
-    
     a(href='#myCarousel', data-slide='prev').left.carousel-control
       span.glyphicon.glyphicon-chevron-left
       
     a(href='#myCarousel', data-slide='next').right.carousel-control
       span.glyphicon.glyphicon-chevron-right
       
-  div.container.marketing
+  div#bi-explained.container
 
     div.row
       div.col-lg-4
-        img.img-circle(src='', alt='Generic placeholder image')
-        h2 Heading
-        p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+        //- img.img-circle(src='', alt='Generic placeholder image')
+        h2 Data
+        p /ˈdeɪtə/
         p 
-          a.btn.btn-default(href='#') View details &raquo;
+          em noun
+        p
+          ol
+            li
+              p facts and statistics collected together for reference or analysis.
+              p.text-muted "there is too much data available"
+              p.text-muted 
+                em synonyms: 
+                | facts, figures, statistics, details, particulars, specifics, features;
       div.col-lg-4
-        img.img-circle(src='', alt='Generic placeholder image')
-        h2 Heading
-        p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+        //- img.img-circle(src='', alt='Generic placeholder image')
+        h2 Knowledge
+        p /ˈnɒlɪdʒ/
         p 
-          a.btn.btn-default(href='#') View details &raquo;
+          em noun
+        p
+          ol
+            li
+              p facts, information, and skills acquired through experience or education; the theoretical or practical understanding of a subject.
+              p.text-muted "a thirst for knowledge"
+              p.text-muted 
+                em synonyms: 
+                | understanding, comprehension, grasp, grip, command, mastery, apprehension;
       div.col-lg-4 
-        img.img-circle(src='', alt='Generic placeholder image')
-        h2 Heading
-        p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+        //- img.img-circle(src='', alt='Generic placeholder image')
+        h2 Business Intelligence
+        p /ˈdeɪtə/
         p 
-          a.btn.btn-default(href='#') View details &raquo;
+          em noun
+        p
+          ol
+            li
+              p Business intelligence is a set of methodologies and technologies that transform raw data into meaningful and useful information for developing new business opportunities.
+              p.text-muted "the future is bright and clear"
+              p.text-muted 
+                em synonyms: 
+                | strategy, future, benefit, competition, edge, advantage, value, profit;
      
     hr.featurette-divider
 
-    div.row.featurette
+    div#xero.row.featurette
       div.col-md-7
-        h2.featurette-heading First featurette heading. 
-          span.text-muted It'll blow your mind.
-        p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        h2.featurette-heading Xero. 
+          span.text-muted All you need to run your business
+        p.lead Try the world's easiest accounting software and you'll see why so many people around the world love Xero
       
       div.col-md-5
         img.featurette-image.img-responsive(src='', alt='Generic placeholder image')
@@ -117,27 +117,17 @@ block body
         img.featurette-image.img-responsive(src='', alt='Generic placeholder image')
     
       div.col-md-7
-        h2.featurette-heading First featurette heading. 
-          span.text-muted It'll blow your mind.
-        p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        h2.featurette-heading Perfect parners. 
+          span.text-muted Seamlessly integrated.
+        p.lead Xero and Dvisr are integrated seamlessly meaning your sales data, purchase data, contacts and invoices are updated automatically and effortlessly.
+ 
       
-    hr.featurette-divider
-
-    div.row.featurette
-      div.col-md-7
-        h2.featurette-heading First featurette heading. 
-          span.text-muted It'll blow your mind.
-        p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-      
-      div.col-md-5
-        img.featurette-image.img-responsive(src='', alt='Generic placeholder image')
-    
     hr.featurette-divider
  
     footer 
       p.pull-right 
         a(href='#') Back to top
-      p &copy; 2013 Company, Inc. &middot; 
+      p &copy; 2013 Dvisr, Inc. &middot; 
         a(href='#') Privacy &middot; 
         a(href='#') Terms
     

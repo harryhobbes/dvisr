@@ -4,6 +4,7 @@
 
 body {
   padding-bottom: 40px;
+  padding-top: 40px;
   color: #5a5a5a;
 }
 
@@ -105,7 +106,6 @@ body {
   }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
-    border-radius: 4px;
   }
 
   /* Bump up size of carousel content */
